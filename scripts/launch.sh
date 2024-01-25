@@ -1,0 +1,1 @@
+/home/aurora/Repos/dtofiles/polybar/launch.sh

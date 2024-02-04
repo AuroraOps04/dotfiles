@@ -1,11 +1,11 @@
 #! /bin/sh
 
+export SXHKD_SHELL='/usr/bin/sh'
 pgrep -x sxhkd >/dev/null || sxhkd &
-# export SXHKD_SHELL='/usr/bin/sh'
 # export QT_QPA_PLATFORMTHEME=qt5ct
 # pgrep -x fcitx5 >/dev/null || fcitx5 &
 # /home/aurora/xrander.sh &
-# pgrep -x polybar >/dev/null || ~/.scripts/launch.sh >/dev/null &
+~/.scripts/launch.sh >/dev/null &
 # pgrep -x picom >/dev/null || picom --experimental-backends >>/var/log/picom.log 2>&1 &
 # pgrep -x feh >/dev/null || /home/aurora/.scripts/random_wallpaper.sh &
 

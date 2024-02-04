@@ -1,0 +1,5 @@
+/home/aurora/.config/scripts/xrandr.sh
+#/home/aurora/.config/scripts/launch.sh
+feh --bg-fill /usr/share/wallpapers/Kite/contents/images/2560x1440.jpg
+picom &
+# pgrep -x picom >/dev/null || picom --experimental-backends >>/var/log/picom.log 2>&1 &

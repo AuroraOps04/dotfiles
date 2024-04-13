@@ -6,6 +6,7 @@ pgrep -x sxhkd >/dev/null || sxhkd &
 # pgrep -x fcitx5 >/dev/null || fcitx5 &
 # /home/aurora/xrander.sh &
 ~/.scripts/launch.sh >/dev/null &
+~/.config/scripts/launch.sh >/dev/null &
 # pgrep -x picom >/dev/null || picom --experimental-backends >>/var/log/picom.log 2>&1 &
 # pgrep -x feh >/dev/null || /home/aurora/.scripts/random_wallpaper.sh &
 

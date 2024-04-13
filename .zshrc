@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="itchy"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -102,4 +102,6 @@ export http_proxy='http://127.0.0.1:7890'
 export https_proxy=$http_proxy
 export GOPATH=/home/aurora/.gopath 
 export GOPROXY='https://goproxy.cn'
+export PATH=$PATH:$GOPATH/bin
 source /usr/share/nvm/init-nvm.sh
+export PATH=/home/aurora/.local/bin:$PATH

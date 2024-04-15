@@ -12,7 +12,7 @@ config.window_padding = {
   left = 8,
 }
 config.color_scheme = "AdventureTime"
-config.font = wezterm.font_with_fallback({ "FiraCode Nerd Font Mono", "Noto Color Emoji" })
+config.font = wezterm.font_with_fallback({  "FiraCode Nerd Font Mono", "Noto Color Emoji", "WenQuanYi Micro Hei Mono" })
 config.hide_tab_bar_if_only_one_tab = true
 config.window_background_opacity = 0.80
 config.initial_cols = 120

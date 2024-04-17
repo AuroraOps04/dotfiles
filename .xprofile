@@ -1,6 +1,6 @@
 /home/aurora/.config/scripts/xrandr.sh
 # /home/aurora/.config/scripts/launch.sh
-feh --bg-fill ~/Pictures/1.jpg
+feh --bg-fill ~/Pictures/wallhaven-qz8pqd.png
 picom &
 fcitx5 &
 dunst &

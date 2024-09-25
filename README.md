@@ -17,3 +17,10 @@ fc-cache -fv
 ```
 ## Links
 * [polybar-collection](https://github.com/Murzchnvok/polybar-collectionhttps://github.com/Murzchnvok/polybar-collection)
+
+
+## Create Link to Home
+This repository manage dotfiles by stow.
+So you should use stow to create soft link.
+eg:
+    stow -t ~/ chrome ( chrome is the folder name in project root ) 

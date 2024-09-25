@@ -29,7 +29,8 @@ super + shift + Return
 
 # strating program
 super + space 
-  bash -c ~/.config/rofi/launchers/type-6/launcher.sh
+  # bash -c ~/.config/rofi/launchers/type-6/launcher.sh
+  rofi -show drun
 
 # make sxhkd reload its configuration files:
 super + Escape

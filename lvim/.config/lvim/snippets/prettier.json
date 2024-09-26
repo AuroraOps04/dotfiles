@@ -1,0 +1,16 @@
+{
+  "Prettier base rule": {
+    "prefix": "prettier",
+    "body": [
+      "semi: false",
+      "singleQuote: true",
+      "tabWidth: 2",
+      "trailingComma: es5",
+      "bracketSpacing: true",
+      "endOfLine: lf",
+      "bracketSameLine: false",
+      "arrowParens: avoid",
+      "jsxSingleQuote: false"
+    ]
+  }
+}

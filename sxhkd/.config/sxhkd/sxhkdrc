@@ -19,7 +19,7 @@ super + shift + ctrl + m
 # terminal emulator
 # TERMINAL=wezterm
 super + Return
-  wezterm
+  alacritty
    # st
 
 

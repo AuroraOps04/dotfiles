@@ -23,14 +23,14 @@ super + Return
    # st
 
 
-super + shift + Return
-  wezterm start --class wezterm-floating
+# super + shift + Return
+#   wezterm start --class wezterm-floating
   # st -c st-floating 
 
 # strating program
 super + space 
-  # bash -c ~/.config/rofi/launchers/type-6/launcher.sh
   rofi -show drun
+  # bash -c ~/.config/rofi/launchers/type-6/launcher.sh
 
 # make sxhkd reload its configuration files:
 super + Escape

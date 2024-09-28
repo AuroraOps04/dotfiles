@@ -15,5 +15,6 @@ set -gx PATH $PATH $GOBIN
 set -gx fish_escape_delay_ms 32
 set -gx fish_greeting 
 
- set -gx polybar_path /home/aurora/.config/polybar
+set -gx polybar_path /home/aurora/.config/polybar
 
+[ -f /usre/share/autojump/autojump.fish ]; and source /usr/share/autojump/autojump.fish

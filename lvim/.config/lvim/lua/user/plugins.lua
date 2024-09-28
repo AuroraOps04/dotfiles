@@ -103,12 +103,12 @@ local formattter = require("lvim.lsp.null-ls.formatters")
 local code_actions = require("lvim.lsp.null-ls.code_actions")
 linter.setup({
   { name = "eslint_d" },
-
 })
 
 
 formattter.setup({
   { name = "prettier" },
+  { name = "black" }
 })
 
 code_actions.setup({

@@ -1,7 +1,7 @@
-/home/aurora/.config/scripts/xrandr.sh
+#/home/aurora/.config/scripts/xrandr.sh
 # /home/aurora/.config/scripts/launch.sh
-feh --bg-fill ~/Pictures/wallhaven-qz8pqd.png
+feh --bg-fill /usr/share/backgrounds/archlinux/awesome.png
 picom &
-fcitx5 &
-dunst &
+#fcitx5 &
+#dunst &
 # pgrep -x picom >/dev/null || picom --experimental-backends >>/var/log/picom.log 2>&1 &

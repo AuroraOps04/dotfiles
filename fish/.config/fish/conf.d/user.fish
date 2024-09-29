@@ -17,4 +17,4 @@ set -gx fish_greeting
 
 set -gx polybar_path /home/aurora/.config/polybar
 
-[ -f /usre/share/autojump/autojump.fish ]; and source /usr/share/autojump/autojump.fish
+[ -f /usr/share/autojump/autojump.fish ]; and source /usr/share/autojump/autojump.fish

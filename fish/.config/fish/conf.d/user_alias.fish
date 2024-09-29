@@ -1,6 +1,4 @@
 # Git
-
-
 alias gst "git status"
 alias ga "git add"
 alias gaa "git add ."
@@ -20,3 +18,8 @@ alias sv sudoedit
 alias ls "ls -lh --color"
 alias l "ls"
 alias nl "nvim leetcode.nvim"
+
+
+# Tmux
+alias "ta" "tmux attach"
+

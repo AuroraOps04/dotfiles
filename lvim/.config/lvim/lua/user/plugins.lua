@@ -91,6 +91,29 @@ lvim.plugins = {
       { "<cmd>Lspsaga peek_type_definition<CR>", "Peek Type Definition Saga" }
     end
   },
+  {
+    "christoomey/vim-tmux-navigator",
+    cmd = {
+      "TmuxNavigateLeft",
+      "TmuxNavigateDown",
+      "TmuxNavigateUp",
+      "TmuxNavigateRight",
+      "TmuxNavigatePrevious",
+    },
+    keys = {
+      { "<c-h>", "<cmd><C-U>TmuxNavigateLeft<cr>" },
+      { "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>" },
+      { "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>" },
+      { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
+      -- { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
+    },
+  },
+  {
+    "voldikss/vim-translator",
+    config = function()
+      vim.g.translator_proxy_url = 'socks5://127.0.0.1:7890'
+    end
+  }
 }
 
 lvim.builtin.cmp.formatting = {

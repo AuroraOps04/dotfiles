@@ -19,12 +19,12 @@ super + shift + ctrl + m
 # terminal emulator
 # TERMINAL=wezterm
 super + Return
-  alacritty
+  wezterm
    # st
 
 
-# super + shift + Return
-#   wezterm start --class wezterm-floating
+super + shift + Return
+  wezterm start --class wezterm-floating
   # st -c st-floating 
 
 # strating program

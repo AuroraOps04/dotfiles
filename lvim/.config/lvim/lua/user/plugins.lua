@@ -6,6 +6,12 @@ lvim.plugins = {
     name = "rose-pine",
   },
   {
+    "neanias/everforest-nvim",
+    config = function()
+      require("everforest").setup()
+    end
+  },
+  {
     'ggandor/leap.nvim',
     config = function()
       -- vim.cmd [[ highlight default  LeapBackdrop guifg='#908caa' ]]
@@ -33,20 +39,20 @@ lvim.plugins = {
       require("auto-save").setup()
     end,
   },
-  {
-    "zbirenbaum/copilot-cmp",
-    event = "InsertEnter",
-    dependencies = { "zbirenbaum/copilot.lua" },
-    config = function()
-      vim.defer_fn(function()
-        --  enable virtual_text
-        require("copilot").setup({
+  -- {
+  --   "zbirenbaum/copilot-cmp",
+  --   event = "InsertEnter",
+  --   dependencies = { "zbirenbaum/copilot.lua" },
+  --   config = function()
+  --     vim.defer_fn(function()
+  --       --  enable virtual_text
+  --       require("copilot").setup({
 
-        })                             -- https://github.com/zbirenbaum/copilot.lua/blob/master/README.md#setup-and-configuration
-        require("copilot_cmp").setup() -- https://github.com/zbirenbaum/copilot-cmp/blob/master/README.md#configuration
-      end, 100)
-    end,
-  },
+  --       })                             -- https://github.com/zbirenbaum/copilot.lua/blob/master/README.md#setup-and-configuration
+  --       require("copilot_cmp").setup() -- https://github.com/zbirenbaum/copilot-cmp/blob/master/README.md#configuration
+  --     end, 100)
+  --   end,
+  -- },
   {
     "norcalli/nvim-colorizer.lua",
     -- red
@@ -113,6 +119,10 @@ lvim.plugins = {
     config = function()
       vim.g.translator_proxy_url = 'socks5://127.0.0.1:7890'
     end
+  },
+  {
+    "tpope/vim-surround",
+
   }
 }
 
@@ -131,7 +141,8 @@ linter.setup({
 
 formattter.setup({
   { name = "prettier" },
-  { name = "black" }
+  { name = "black" },
+  { name = "clang_format" }
 })
 
 code_actions.setup({

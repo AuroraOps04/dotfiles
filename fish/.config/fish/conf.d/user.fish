@@ -7,7 +7,11 @@ set -gx ALL_PROXY "socks5://localhost:7891"
 # else
 #   set -gx EDITOR nvim
 # end
-set -gx EDITOR nvim
+if set -q SSH_CONNECTION;
+  set -gx EDITOR vim;
+else
+  set -gx EDITOR lvim
+end
 set -gx GOPROXY https://goproxy.io,direct
 set -gx GOBIN  ~/.local/bin
 set -gx GOPATH  ~/Repos/gopath

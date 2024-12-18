@@ -18,6 +18,7 @@ alias sv sudoedit
 alias ls "ls -lh --color"
 alias l "ls"
 alias nl "nvim leetcode.nvim"
+alias c "clear"
 
 
 # Tmux

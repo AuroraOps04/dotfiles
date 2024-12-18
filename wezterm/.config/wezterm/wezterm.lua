@@ -11,9 +11,9 @@ config.window_padding = {
   bottom = 0,
   left = 8,
 }
--- config.color_scheme = "AdventureTime"
+--  config.color_scheme = "AdventureTime"
 config.font = wezterm.font_with_fallback(
-  { "FiraCode Nerd Font Mono",
+  { "Maple Mono NF",
     "Noto Color Emoji",
     "WenQuanYi Micro Hei Mono" })
 config.hide_tab_bar_if_only_one_tab = true
@@ -25,5 +25,4 @@ config.initial_rows = 36
 -- 	height = "1cell",
 -- 	opacity = 0.75,
 -- }
-
 return config

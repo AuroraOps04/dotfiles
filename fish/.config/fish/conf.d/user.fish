@@ -1,6 +1,6 @@
 set -gx http_proxy http://localhost:7890
 set -gx https_proxy $http_proxy
-set -gx ALL_PROXY "socks5://localhost:7891"
+# set -gx ALL_PROXY $http_proxy
 # TODO: FIX IT 
 # if test -n $SSH_CONNECTION 
 #   set -gx EDITOR vim
@@ -22,3 +22,12 @@ set -gx fish_greeting
 set -gx polybar_path /home/aurora/.config/polybar
 
 [ -f /usr/share/autojump/autojump.fish ]; and source /usr/share/autojump/autojump.fish
+
+function y
+	set tmp (mktemp -t "yazi-cwd.XXXXXX")
+	yazi $argv --cwd-file="$tmp"
+	if set cwd (command cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+		builtin cd -- "$cwd"
+	end
+	rm -f -- "$tmp"
+end

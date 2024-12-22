@@ -7,7 +7,7 @@ pgrep -x fcitx5 >/dev/null || fcitx5 &
 # /home/aurora/xrander.sh &
 # ~/.scripts/launch.sh >/dev/null &
 ~/.local/share/user_scripts/launch_polybar.sh >/dev/null &
-pgrep -x picom >/dev/null || picom   &
+pgrep -x picom >/dev/null || picom --backend glx  &
 pgrep -x feh >/dev/null || feh --bg-fill /home/tory/Pictures/wallhaven-2ymgg9.jpg
 
 bspc monitor -d I II III IV V VI VII VIII IX X
